@@ -1,4 +1,4 @@
-@import "./styles/variables.css";
+@import "tailwindcss";
 
 * {
   margin: 0;
@@ -6,8 +6,13 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background-color: #0a0a0a;
-  color: #e0e0e0;
+  background-color: #020817;
+  color: #e2e8f0;
   font-family: "Inter", sans-serif;
+  overflow-x: hidden;
 }

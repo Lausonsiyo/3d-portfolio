@@ -1,7 +1,10 @@
+//COMPONENTS IMPORTS
+import Hero from "./components/Hero/Hero";
+
 function App() {
   return (
     <main>
-      <h1>3D Portfolio</h1>
+      <Hero />
     </main>
   );
 }
