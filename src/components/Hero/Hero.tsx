@@ -8,7 +8,7 @@ function StarField() {
       <Stars
         radius={100}
         depth={50}
-        count={6000}
+        count={60000}
         factor={4}
         saturation={0}
         fade
@@ -81,13 +81,13 @@ function Hero() {
         >
           <a
             href="#projects"
-            className="px-8 py-3 bg-cyan-500 hover:bg-cyan-400 text-black font-semibold rounded-full transition-all duration-300 hover:shadow-[0_0_20px_rgba(6,182,212,0.5)]"
+            className=" px-8 py-3 bg-cyan-500 hover:bg-cyan-400 text-black font-semibold rounded-full transition-all duration-300 hover:shadow-[0_0_20px_rgba(6,182,212,0.5)]"
           >
             View Projects
           </a>
           <a
             href="#contact"
-            className="px-8 py-3 border border-cyan-500/50 hover:border-cyan-400 text-cyan-400 font-semibold rounded-full transition-all duration-300 hover:shadow-[0_0_20px_rgba(6,182,212,0.2)]"
+            className=" px-8 py-3  border border-cyan-500/50 hover:border-cyan-400 text-cyan-400 font-semibold rounded-full transition-all duration-300 hover:shadow-[0_0_20px_rgba(6,182,212,0.2)]"
           >
             Contact Me
           </a>
@@ -117,5 +117,4 @@ function Hero() {
     </section>
   );
 }
-
 export default Hero;
