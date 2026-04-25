@@ -81,13 +81,14 @@ function Hero() {
         >
           <a
             href="#projects"
-            className=" px-8 py-3 bg-cyan-500 hover:bg-cyan-400 text-black font-semibold rounded-full transition-all duration-300 hover:shadow-[0_0_20px_rgba(6,182,212,0.5)]"
+            className="inline-flex items-center justify-center w-[200px] px-6 py-4 text-lg bg-cyan-500 hover:bg-cyan-400 text-black font-semibold rounded-full transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(6,182,212,0.6)]"
           >
             View Projects
           </a>
+
           <a
             href="#contact"
-            className=" px-8 py-3  border border-cyan-500/50 hover:border-cyan-400 text-cyan-400 font-semibold rounded-full transition-all duration-300 hover:shadow-[0_0_20px_rgba(6,182,212,0.2)]"
+            className="inline-flex items-center justify-center w-[200px] px-6 py-4 text-lg border-2 border-cyan-400 text-cyan-300 hover:bg-cyan-400/10 font-semibold rounded-full transition-all duration-300 hover:scale-105 hover:shadow-[0_0_25px_rgba(6,182,212,0.4)]"
           >
             Contact Me
           </a>
