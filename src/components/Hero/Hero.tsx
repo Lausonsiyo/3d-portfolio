@@ -64,7 +64,7 @@ function Hero() {
         </motion.h1>
 
         <motion.p
-          className="text-slate-400 text-lg md:text-xl max-w-xl mx-auto mb-10"
+          className="text-slate-400 text-lg md:text-xl max-w-xl gap-6 mb-8 mx-auto"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.6 }}
