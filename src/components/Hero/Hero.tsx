@@ -43,7 +43,7 @@ function Hero() {
       {/* Content */}
       <div className="relative z-10 text-center px-4">
         <motion.p
-          className="text-cyan-400 text-sm uppercase tracking-[0.3em] mb-4 font-medium"
+          className="text-cyan-400 text-md uppercase tracking-[0.5em] mb-4 font-medium"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
