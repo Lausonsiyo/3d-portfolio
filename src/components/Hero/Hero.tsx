@@ -8,20 +8,21 @@ function StarField() {
       <Stars
         radius={100}
         depth={50}
-        count={60000}
-        factor={4}
+        count={3000}
+        factor={8}
         saturation={0}
         fade
-        speed={0.5}
+        speed={0.2}
       />
-      
+
       <OrbitControls
         enableZoom={false}
         enablePan={false}
         autoRotate
-        autoRotateSpeed={0.3}
+        autoRotateSpeed={0.17}
       />
-      <ambientLight intensity={0.5} />
+      <ambientLight intensity={0.4} />
+      <pointLight position={[0, 0, 2]} intensity={2} color="#06b6d4" />
     </>
   );
 }
@@ -31,7 +32,7 @@ function Hero() {
     <section className="relative w-full h-screen flex items-center justify-center overflow-hidden">
       {/* 3D Background */}
       <div className="absolute inset-0 z-0">
-        <Canvas camera={{ position: [0, 0, 1] }}>
+        <Canvas camera={{ position: [0, 0, 5], fov: 60 }}>
           <StarField />
         </Canvas>
       </div>
@@ -120,28 +121,3 @@ function Hero() {
   );
 }
 export default Hero;
-
-function FloatingOrb() {
-  const meshRef = useRef()
-
-  useFrame((state) => {
-    meshRef.current.rotation.y += 0.003
-    meshRef.current.position.y =
-      Math.sin(state.clock.elapsedTime) * 0.2
-  })
-
-  return (
-    <Float speed={2}>
-      <mesh ref={meshRef}>
-        <sphereGeometry args={[1, 64, 64]} />
-
-        <meshStandardMaterial
-          color="#06b6d4"
-          emissive="#0891b2"
-          emissiveIntensity={1.5}
-          roughness={0.2}
-        />
-      </mesh>
-    </Float>
-  )
-}
